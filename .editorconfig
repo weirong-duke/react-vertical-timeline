@@ -1,0 +1,34 @@
+# EditorConfig helps developers define and maintain consistent
+# coding styles between different editors and IDEs
+# editorconfig.org
+#
+# Full docs at https://github.com/editorconfig/editorconfig/wiki/EditorConfig-Properties
+#
+# Note that this file is exactly duplicated between claire-mobile and plus-provider-mobile-ui
+
+root = true
+
+[*]
+
+# General text settings
+charset = utf-8
+
+# Indentation: "Smart tabs"
+indent_style = tab
+indent_size = tab
+
+# Line endings:
+max_line_length = 120
+end_of_line = lf
+trim_trailing_whitespace = true
+
+# File endings:
+insert_final_newline = true
+
+
+# Markdown files have their own rules, mostly to play nice with Bitbucket's renderer and built-in editor
+[*.md]
+indent_style = space
+indent_size = 4
+max_line_length = 1024
+trim_trailing_whitespace = false

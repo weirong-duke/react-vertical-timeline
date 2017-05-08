@@ -1,0 +1,15 @@
+# http://git-scm.com/docs/gitignore
+
+/node_modules/
+/yarn.lock
+/.idea
+/npm-debug.log
+/.DS_STORE
+/.DS_Store
+**/.DS_STORE
+**/.DS_Store
+
+/www/images
+/www/img
+/www/fonts
+/www/bundle.js
