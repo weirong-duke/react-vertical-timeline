@@ -3,16 +3,11 @@
   "version": "0.0.1",
   "description": "React Customizable Timeline Component",
   "private": true,
-  "main": "",
-  "config": {
-    "project_name": "react-vertical-timeline"
-  },
+  "main": "lib/index.js",
   "scripts": {
     "start": "webpack-dev-server --progress --colors --hot --config ./webpack.config.dev.js",
     "analyze": "webpack --progress --config ./webpack.config.analyze.js",
-    "build": "npm run build-lib && npm run build-www",
-    "build-lib": "./generate_exports.sh && BABEL_ENV=production node_modules/.bin/babel --out-dir='lib' src/js/components/ $npm_package_project_name.js && rm $npm_package_project_name.js",
-    "build-www": "webpack --progress --config ./webpack.config.prod.js && tar -zcvf mfreactstandards.tar.gz -C www .",
+    "build": "sh generate_exports.sh && mv react-vertical-timeline.js index.js && sh ./node_modules/.bin/babel --out-dir='lib' src/components/ index.js && rm index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "William Chen",

@@ -1,26 +1,6 @@
 import React from 'react';
 import TimelineItem from '../TimelineItem';
 
-/*
-timelineOptions///
-{
-
-    lineColor
-    lineThickness
-
-    defaultItemOptions: {
-        circleColor
-
-        timeColor
-
-        titleColor
-        descriptionColor
-        font
-    }
-
-}
-
-*/
 class Timeline extends React.Component {
     getTimelineStyle() {
         const options = this.props.options || {};

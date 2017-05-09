@@ -24,29 +24,6 @@ const items=[
     }
 ]
 
-/*
-timelineOptions///
-{
-
-    lineColor
-    lineThickness
-	font
-
-    defaultItemOptions: {
-        circleColor
-		circleFill
-		circleThickness
-
-        momentColor
-
-        titleColor
-        descriptionColor
-    }
-
-}
-
-*/
-
 const timelineOptions = {
 	lineThickness: 'thin',
 	defaultItemOptions: {
