@@ -58,3 +58,8 @@ const items = [{
 
 <VerticalTimeline items={items} options={timelineOptions}/>
 ```
+
+#### Upcoming
+* Responsive size
+* Custom field location and timeline location
+* Horizontal option
